@@ -1,0 +1,5 @@
+package Momopoly;
+
+public enum Color {
+    MARRON, AZUL_CELESTE, ROSA, NARANJA, ROJO, AMARILLO, VERDE, AZUL_MARINO;
+}
