@@ -1,18 +1,19 @@
 package Momopoly;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Distrito extends Casilla{
     private int precio;
-    private HashMap<Integer, Integer> alquiler;
-    private Jugador duenho = null;
+    private final Map<Integer, Integer> alquiler;
+    private Jugador duenho;
     private Color colorCasilla;
 
-    public Distrito(String nombre, int numero, int precio, HashMap<Integer, Integer> alquiler, Jugador duenho, Color colorCasilla) {
-        super(nombre, numero);
+    public Distrito(String nombre, int[][] posicionCasilla, int precio, Map<Integer, Integer> alquiler, Jugador duenho, Color colorCasilla) {
+        super(nombre, posicionCasilla);
         this.precio = precio;
         this.alquiler = alquiler;
-        this.duenho = duenho;
+        this.duenho = null;
         this.colorCasilla = colorCasilla;
     }
 
@@ -25,6 +26,11 @@ public class Distrito extends Casilla{
     }
 
     public void cobrarAlquiler(Jugador inquilino) {
+
+    }
+
+    @Override
+    public void interaccionCasilla() {
 
     }
 }

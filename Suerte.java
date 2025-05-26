@@ -5,8 +5,8 @@ import java.util.List;
 public class Suerte extends Casilla{
     private List<Carta> cartas;
 
-    public Suerte(String nombre, int numero, List<Carta> cartas) {
-        super(nombre, numero);
+    public Suerte(String nombre, int[][] posicionCasilla, List<Carta> cartas) {
+        super(nombre, posicionCasilla);
         this.cartas = cartas;
     }
 
@@ -19,6 +19,11 @@ public class Suerte extends Casilla{
     }
 
     public void accion(Jugador jugador) {
+
+    }
+
+    @Override
+    public void interaccionCasilla() {
 
     }
 }

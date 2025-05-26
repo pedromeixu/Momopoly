@@ -3,11 +3,11 @@ package Momopoly;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Iniciador {
+public class Controlador {
     private List<Jugador> jugadores;
     private int turnoActual;
 
-    public Iniciador() {
+    public Controlador() {
         jugadores = new ArrayList<Jugador>();
         turnoActual = 0;
     }

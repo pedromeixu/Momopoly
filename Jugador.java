@@ -1,22 +1,21 @@
 package Momopoly;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Jugador {
     private String nombre;
     private int dinero;
-    private int posicion = 0;
-    private List<Distrito> propiedades;
+    protected static ArrayList<int[]> posicionJugador;
+    private Distrito[] propiedades;
 
-    public Jugador(String nombre, int dinero, int posicion) {
+    public Jugador(String nombre, int dinero, ArrayList<int[]> posicion) {
         this.nombre = nombre;
         this.dinero = dinero;
-        this.posicion = posicion;
-        this.propiedades = new ArrayList<>();
+        this.posicionJugador = posicion;
+        this.propiedades = new Distrito[]{};
     }
 
-    public List<Distrito> getPropiedades() {
+    public Distrito[] getPropiedades() {
         return propiedades;
     }
 
